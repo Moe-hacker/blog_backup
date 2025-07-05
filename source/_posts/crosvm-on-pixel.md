@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (需要ROOT)在Tensor设备上跑crosvm，并开机自启动
+title: (需要ROOT)在Tensor设备上用crosvm跑Fedora，并结合magisk实现后台ssh服务
 date: 2025-07-05 17:22:17
 tags:
 - crosvm
