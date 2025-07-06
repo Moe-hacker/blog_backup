@@ -130,6 +130,7 @@ fi
 
 ulimit -l unlimited
 /apex/com.android.virt/bin/crosvm run \
+        --gpu-backend=virglrenderer \
         --disable-sandbox --swiotlb 64 \
         --params 'loglevel=0' --mem 4096 --cpus 8 \
         --net tap-name=$ifname \
