@@ -73,7 +73,7 @@ void函数最后的return
 ### 使用ASAN查看内存问题：
 ASAN全称Address Sanitizer，是google发明的一种内存地址错误检查器，用于在运行时检测代码内存问题。      
 如何使用：      
-编译时加入参数`-O0 -fsanitize=address -fno-stack-protector -fno-omit-frame-pointer`
+编译时加入参数`-O0 -fsanitize=address,undefined -fno-stack-protector -fno-omit-frame-pointer`
 如果运气好的话，设置环境变量`LSAN_OPTIONS="verbosity=1:log_threads=1" ASAN_OPTIONS="verbosity=1"`，你将看到一片fa的冥场面。      
 ```log
 SUMMARY: AddressSanitizer: heap-buffer-overflow asan_interceptors.cpp.o in printf_common(void*, char const*, __va_list_tag*)
